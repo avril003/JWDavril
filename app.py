@@ -65,8 +65,8 @@ def add():
         conn.commit()
         cursor.close()
         conn.close()
-        return redirect(url_for('list_pendaftar'))
-    return render_template('add.html')
+        return redirect(url_for('list_penfdatar'))
+    return render_template('pendaftar')
 
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):
